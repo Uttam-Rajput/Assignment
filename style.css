@@ -755,25 +755,31 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero-content h1,
-    .hero-content h2 {
-        font-size: 2rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .recommendation-card {
-        min-width: 250px;
-    }
-    
-    .info-row {
-        flex-direction: column;
-        gap: 0.25rem;
-    }
+  .container {
+    padding: 0 6px;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-container {
+    max-width: 100vw;
+  }
+
+  .carousel-track {
+    gap: 1rem;
+  }
+
+  .recommendation-card {
+    min-width: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
